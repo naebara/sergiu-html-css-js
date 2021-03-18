@@ -1,0 +1,13 @@
+.el {
+  color: dodgerblue;
+}
+
+.city {
+  color: red;
+  padding: 10px;
+  border: 1px solid firebrick;
+}
+
+.first {
+  font-weight: 200;
+}
