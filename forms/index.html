@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Forms</h1>
+      <!-- size, maxLength, value  -->
+      <form id="form">
+        Name: <br />
+        <input type="text" name="name" id="name" placeholder="Doe" />
+        <br />
+        Last name: <br />
+        <input type="text" placeholder="John" size="10" maxlength="9" />
+
+        <br />
+        Password: <br />
+        <input type="password" id="pass" />
+
+        <br />
+        Describe yourself:
+        <br />
+        <textarea rows="7" cols="50"></textarea>
+
+        <br />
+        Gender:
+        <br />
+
+        <input type="radio" value="male" name="gender" checked /> Male
+        <input type="radio" name="gender" /> Female
+        <input type="radio" name="gender" /> Other
+
+        <br />
+        Hobbies
+        <br />
+        <input name="hobbies" type="checkbox" /> Java <br />
+        <input name="hobbies" type="checkbox" /> Js <br />
+        <input name="hobbies" type="checkbox" /> Spring Boot <br />
+        <input name="hobbies" type="checkbox" /> Sleeping <br />
+        <!-- <button id="sub">Submit</button> -->
+        <input class="submitbtn" type="submit" value="Done" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

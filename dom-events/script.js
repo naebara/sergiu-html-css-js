@@ -1,10 +1,12 @@
-function cl() {
+function cl(event) {
     console.log(event)
     console.log("element clicked")
 }
 let div = document.querySelector("#di")
-
-// document.querySelector("#di").onclick = cl
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+document.querySelector("#di").onclick = cl
 // document.querySelector("#di").addEventListener("click", cl)
 
 // div.ondblclick = cl
@@ -30,3 +32,23 @@ let div = document.querySelector("#di")
 // click blue
 // over : green
 // out yellow
+
+
+
+let p = document.querySelector("#p");
+let color = "";
+document.onkeydown = function (keyEvent) {
+    p.innerHTML += keyEvent.key
+    color += keyEvent.key
+
+    div.style.backgroundColor = color
+}
+
+function reset() {
+
+    color = "";
+    p.innerHTML = ""
+    div.style.backgroundColor = "dodgerblue"
+}
+
+// onkeypress vs onkeydown
